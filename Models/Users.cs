@@ -11,6 +11,6 @@ public class User
     [DataType(DataType.Date)]
     public DateTime dateOfBirth { get; set; }
     public string? login { get; set; }  //nullable
-    public int isDeleted { get; set; }
+    public bool isDeleted { get; set; }
 
 }

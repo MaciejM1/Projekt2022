@@ -26,7 +26,7 @@ public static class SeedData
                     Surname = "Górski",
                     dateOfBirth = DateTime.Parse("1999-3-18"),
                     login = "tomgor@wp.pl",
-                    isDeleted = 0
+                    isDeleted = false
                 },
                 new User
                 {
@@ -34,7 +34,7 @@ public static class SeedData
                     Surname = "Feral",
                     dateOfBirth = DateTime.Parse("2003-6-8"),
                     login = "karfer@gmail.com",
-                    isDeleted = 0
+                    isDeleted = false
                 },
                 new User
                 {
@@ -42,7 +42,7 @@ public static class SeedData
                     Surname = "Bogon",
                     dateOfBirth = DateTime.Parse("1989-12-12"),
                     login = "alibog@wp.pl",
-                    isDeleted = 0
+                    isDeleted = false
                 },
                 new User
                 {
@@ -50,7 +50,7 @@ public static class SeedData
                     Surname = "Podolski",
                     dateOfBirth = DateTime.Parse("1978-8-16"),
                     login = "patpod@wp.pl",
-                    isDeleted = 0
+                    isDeleted = false
                 }
             );
             context.SaveChanges();

@@ -15,5 +15,6 @@ namespace Projekt2022.Data
         }
 
         public DbSet<Projekt2022.Models.User> User { get; set; } = default!;
+    
     }
 }

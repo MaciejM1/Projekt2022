@@ -144,10 +144,7 @@ namespace Projekt2022.Controllers
                 return Problem("Entity set 'Projekt2022Context.User'  is null.");
             }
             var user = await _context.User.FindAsync(id);
-            if (user != null)
-            {
-                _context.User.Remove(user);
-            }
+            user.isDeleted = true;
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

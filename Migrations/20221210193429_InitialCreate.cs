@@ -21,7 +21,7 @@ namespace Projekt2022.Migrations
                     Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     dateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
                     login = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    isDeleted = table.Column<int>(type: "int", nullable: false)
+                    isDeleted = table.Column<int>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {

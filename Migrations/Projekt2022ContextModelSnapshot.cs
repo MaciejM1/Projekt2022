@@ -42,7 +42,7 @@ namespace Projekt2022.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<int>("isDeleted")
-                        .HasColumnType("int");
+                        .HasColumnType("bit");
 
                     b.Property<string>("login")
                         .HasColumnType("nvarchar(max)");
